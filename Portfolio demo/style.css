@@ -1,0 +1,248 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #07f2e7;
+    background: linear-gradient(14deg, rgba(7, 242, 231, 1) 0%, rgba(7, 242, 148, 0.95) 50%, rgba(204, 191, 75, 1) 100%);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: rgba(17, 17, 17, 0.3);
+    padding: 0.5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-radius: 50px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.logo {
+    padding: 10px 20px;
+    border-radius: 50%;
+    color: black;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(9, 78, 67);
+}
+
+img {
+    max-width: 100%;
+}
+
+section { 
+    padding: 60px 20px; 
+    max-width: 900px; 
+    margin: auto; 
+}
+    
+h2 { 
+    color: rgb(8, 65, 65); 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+.hero {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 span { 
+    color: #00C9A7; 
+}
+
+.btn {
+    background: rgb(12, 88, 88);
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover { 
+    background: teal; color: white; 
+}
+
+.profile-pic img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    border: 5px solid cornflowerblue;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: inherit;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: rgb(8, 65, 65);
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e5e7eb;
+    animation: fadeIn 2s ease-in forwards; 
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card img {  
+    margin-bottom: 10px; 
+    border-radius: 50px; 
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.project-card {
+    background: #2C2C2C;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    color: #aaa;
+}
+
+.project-card:hover { 
+    transform: translateY(+10px); 
+    background: #333; 
+}
+
+.call {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #4ade80; /* matches your green accent */
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+    color: #f1f5f9; /* light text for readability */
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background: rgb(12, 88, 88);
+    color: #1C1C1C;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: teal;
+    color: #fff;
+}
+
+.socials { 
+    text-align: center; 
+    margin-top: 15px; 
+}
+
+.socials a { 
+    color: #F5F5F5; 
+    margin: 0 10px; 
+    font-size: 1.5em; 
+}
+
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    background: #111; 
+    color: #aaa; 
+}
+
+@media screen and (max-width: 900px) {
+    .about-container {
+    flex-direction: column;
+    }
+
+    nav ul {
+    flex-direction: column;
+    gap: 10px;
+    }
+    
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
